@@ -1,16 +1,12 @@
-// Importamos las funciones del wrapper
-import { OMDBSearchByPage, OMDBSearchComplete, OMDBGetByImdbID } from './modules/omdbwrapper.js';
+import { buscarOMDBPorPagina, buscarOMDBCompleto, obtenerOMDBPorImdbID } from './modules/omdbwrapper.js';
 
 let resultado = null;
 
-// Test de la función OMDBSearchByPage
-resultado = await OMDBSearchByPage("cars", 1);
-console.log("OMDBSearchByPage", resultado.datos);
+resultado = await buscarOMDBPorPagina("cars", 1);
+console.log("buscarOMDBPorPagina", resultado.datos);
 
-// Test de la función OMDBSearchComplete
-resultado = await OMDBSearchComplete("Batman");
-console.log("OMDBSearchComplete", resultado.datos);
+resultado = await buscarOMDBCompleto("Batman");
+console.log("buscarOMDBCompleto", resultado.datos);
 
-// Test de la función OMDBGetByImdbID
-resultado = await OMDBGetByImdbID("tt0111161"); // IMDb ID de "The Shawshank Redemption"
-console.log("OMDBGetByImdbID", resultado.datos);
+resultado = await obtenerOMDBPorImdbID("tt0111161"); 
+console.log("obtenerOMDBPorImdbID", resultado.datos);
