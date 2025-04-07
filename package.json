@@ -1,0 +1,24 @@
+{
+  "name": "tp_node_dai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ej01": "node ej01",
+    "ej02": "node ej02",
+    "ej03": "node ej03",
+    "ej04": "node ej04",
+    "ej05": "node ej05",
+    "ej06": "node ej06",
+    "ej07": "node ej07",
+    "ej08": "node ej08"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "currency-map-country": "^1.0.12"
+  }
+}
